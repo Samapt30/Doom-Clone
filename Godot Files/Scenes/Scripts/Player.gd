@@ -30,10 +30,11 @@ func _unhandled_input(event):
 
 func _physics_process(delta):
 	#Gravity
-	velocity += gravity * delta
+	velocity.y *= gravity * delta
 	var desired_velocity = get_input() * max_speed
 	velocity.x = desired_velocity.x
-	velocity.z = desired_velocity.y
+	velocity.z = desired_velocity.z
+	velocity = move_and_slide(velocity,Vector3.UP,true)
 	
 
 func change_gun(gun):
