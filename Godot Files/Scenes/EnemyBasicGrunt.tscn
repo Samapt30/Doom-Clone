@@ -34,16 +34,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 18 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 1 ) ],
-"loop": false,
-"name": "explode",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 19 ), ExtResource( 13 ) ],
-"loop": false,
-"name": "shoot",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 11 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 12 ) ],
 "loop": true,
 "name": "walking",
@@ -54,9 +44,19 @@ animations = [ {
 "name": "die",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 9 ), ExtResource( 18 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "explode",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 5 ), ExtResource( 5 ) ],
 "loop": false,
 "name": "hit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "shoot",
 "speed": 5.0
 } ]
 
@@ -74,6 +74,7 @@ offset = Vector2( -15.96, 0 )
 billboard = 2
 frames = SubResource( 2 )
 animation = "walking"
+frame = 3
 playing = true
 
 [node name="RayCast" type="RayCast" parent="."]
