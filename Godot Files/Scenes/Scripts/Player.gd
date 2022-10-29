@@ -8,9 +8,10 @@ var mouse_sensitivity = 0.002
 
 #Gun variables
 onready var pistol = preload("res://Scenes/Pistol.tscn")
-onready var shotgun = preload("res://Scenes/SWATShotgun.tscn")
+onready var shotgun = preload("res://Scenes/Shotgun.tscn")
+onready var chaingun = preload("res://Scenes/ChainGun.tscn")
 var current_gun = 0
-onready var carried_guns = [pistol,shotgun]
+onready var carried_guns = [pistol,shotgun,chaingun]
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

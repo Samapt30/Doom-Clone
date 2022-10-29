@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ak47fir.ogg-3bd31a273971a2c8ce6ecb69cc8df771.oggstr"
+
+[deps]
+
+source_file="res://Resources/Weapons/ChainGun/sounds/ak47fir.ogg"
+dest_files=[ "res://.import/ak47fir.ogg-3bd31a273971a2c8ce6ecb69cc8df771.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

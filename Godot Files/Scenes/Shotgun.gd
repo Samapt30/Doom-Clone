@@ -32,4 +32,3 @@ func _process(delta):
 		can_shoot = true
 		gun_sprite.play("idle")
 		
-# 

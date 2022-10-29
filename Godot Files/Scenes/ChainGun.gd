@@ -5,7 +5,7 @@ onready var gun_rays = $GunRays.get_children()
 onready var flash = preload("res://Scenes/MuzzleFlash.tscn")
 
 var can_shoot = true
-var damage = 8
+var damage = 2
 
 func _ready():
 	gun_sprite.play("idle")
@@ -21,7 +21,7 @@ func make_flash():
 	add_child(f)
 	
 func _process(delta):
-	if Input.is_action_just_pressed("shoot") and can_shoot:
+	if Input.is_action_pressed("shoot") and can_shoot:
 		gun_sprite.play("shoot")
 		make_flash()
 		check_hit()
@@ -32,4 +32,5 @@ func _process(delta):
 		can_shoot = true
 		gun_sprite.play("idle")
 		
-# 
+func _on_Timer_timeout():
+	can_shoot = true
